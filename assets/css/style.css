@@ -8,3 +8,55 @@
 	border: 0;
 	box-sizing: border-box;
 }
+
+/* make 1rem be 10px so easier to calculate font sizes */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+	font-size: 4rem;
+}
+
+#word-area {
+	/* float: left; */
+	width: 100%;
+	background-color: red;
+}
+
+#score-area {
+	/* float: left; */
+	width: 100%;
+	background-color: green;
+}
+
+#keyboard-area {
+	float: left;
+	width: 50%;
+	background-color: pink;
+}
+
+#guessed-area {
+	background-color: blue;
+	width: 35%;
+	float: left;
+}
+
+#guess-area {
+	width: 20%;
+	background-color: yellow;
+	float: left;
+}
+
+
+#gallows-area {
+	background-color: brown;
+	float: left;
+}
+
+#message-area {
+	color: red;
+}
+
+
