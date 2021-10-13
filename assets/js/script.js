@@ -30,6 +30,14 @@ function checkGuess(id) {
 
 }
 
+/**
+ * get users keyed value and pass it to checkGuess()
+ */
+function getKeyedValue() {
+    let keyedValue = document.getElementById("keyed-guess").innerHTML;
+    checkGuess(keyedValue);
+}
+
 createKeyboard();
 
 /**
