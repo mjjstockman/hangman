@@ -72,3 +72,10 @@ let answerArray = [];
 
 createAnswerArray();
 
+document.onkeydown = function(event) {
+    let keyCode = event.keyCode;
+    if (keyCode > 64 && keyCode < 91) {
+        alert("letter keyed")
+    } 
+  }
+
