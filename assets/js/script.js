@@ -59,7 +59,7 @@ function chooseWord() {
     ];
 
     word = words[Math.floor(Math.random() * words.length)].toUpperCase();  
-    alert(word);
+
 }
 
 chooseWord();
@@ -87,18 +87,12 @@ document.onkeydown = function(event) {
       document.getElementById("keyed-guess").innerHTML = keyPress;
     }
     if (keyCode === 13) {
-        alert("enter pressed");
         checkEmptyKeyGuess();
     }
   }
 
   function checkEmptyKeyGuess() {
-    //   let keyedGuess = document.getElementById("keyed-guess").innerHTML;
       if (keyedGuess = document.getElementById("keyed-guess").innerHTML== "") {
         alert("no letter");
       }
-    //   if (document.getElementById("keyed-guess").innerHTML = "") {
-    //     alert("no letter");
-    //   }
-    // alert(keyedGuess);
   }
