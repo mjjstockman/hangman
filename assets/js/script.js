@@ -17,18 +17,40 @@
 
 createKeyboard();
 
+/**
+ * called when keyboard btn clicked
+ * @param {} id 
+ */
 function btnClicked(id) {
     alert(`${id} button clicked`);
 }
 
+
+/**
+ * choose a random word from the words array
+ */
 function chooseWord() {
     let words = [
         "PANCAKE",
         "CURRY"
     ];
 
-    let word = words[Math.floor(Math.random() * words.length)].toUpperCase();  
+    word = words[Math.floor(Math.random() * words.length)].toUpperCase();  
     alert(word);
 }
 
 chooseWord();
+
+/**
+ * display the random word in the word-area as underscores for each letter
+ */
+ function createAnswerArray() {
+    let answerArray = [];
+    let wordLength = word.length;
+    for (let i = 0; i < wordLength; i++ ) {
+      answerArray[i] = ("_ ");
+    }
+    document.getElementById('word-area').innerHTML = answerArray.join("");
+}
+
+createAnswerArray();
