@@ -85,5 +85,20 @@ document.onkeydown = function(event) {
     if (keyCode > 64 && keyCode < 91) {
         let keyPress = String.fromCharCode(event.keyCode);
       document.getElementById("keyed-guess").innerHTML = keyPress;
-    } 
+    }
+    if (keyCode === 13) {
+        alert("enter pressed");
+        checkEmptyKeyGuess();
+    }
+  }
+
+  function checkEmptyKeyGuess() {
+    //   let keyedGuess = document.getElementById("keyed-guess").innerHTML;
+      if (keyedGuess = document.getElementById("keyed-guess").innerHTML== "") {
+        alert("no letter");
+      }
+    //   if (document.getElementById("keyed-guess").innerHTML = "") {
+    //     alert("no letter");
+    //   }
+    // alert(keyedGuess);
   }
