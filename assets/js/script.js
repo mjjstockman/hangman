@@ -9,10 +9,25 @@
         // on each loop add html to the var...
         html += `<button
                     id = ${c}
-                    onclick="btnClicked(id)">` + c +
+                    onclick="checkGuess(id)">` + c +
                 `</button>`;
     }
-    document.getElementById('keyboard-area').innerHTML = html;
+    document.getElementById('keyboard-area').innerHTML = html; 
+}
+
+/**
+ * add the guessed letter to the word if it is in it
+ * @param {*} id 
+ */
+function checkGuess(id) {
+    for (let i = 0; i < word.length; i++) {
+        console.log
+        if (id == word[i]) {
+            answerArray[i] = id;
+            document.getElementById("word-area").innerHTML = answerArray.join(" ");
+        }
+    }
+
 }
 
 createKeyboard();
@@ -21,9 +36,9 @@ createKeyboard();
  * called when keyboard btn clicked
  * @param {} id 
  */
-function btnClicked(id) {
-    alert(`${id} button clicked`);
-}
+// function btnClicked(id) {
+//     alert(`${id} button clicked`);
+// }
 
 
 /**
@@ -41,11 +56,13 @@ function chooseWord() {
 
 chooseWord();
 
+let answerArray = [];
+
 /**
  * display the random word in the word-area as underscores for each letter
  */
  function createAnswerArray() {
-    let answerArray = [];
+    
     let wordLength = word.length;
     for (let i = 0; i < wordLength; i++ ) {
       answerArray[i] = ("_ ");
@@ -54,3 +71,4 @@ chooseWord();
 }
 
 createAnswerArray();
+
