@@ -20,3 +20,15 @@ createKeyboard();
 function btnClicked(id) {
     alert(`${id} button clicked`);
 }
+
+function chooseWord() {
+    let words = [
+        "PANCAKE",
+        "CURRY"
+    ];
+
+    let word = words[Math.floor(Math.random() * words.length)].toUpperCase();  
+    alert(word);
+}
+
+chooseWord();
