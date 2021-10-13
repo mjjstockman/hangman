@@ -8,10 +8,15 @@
         let c = String.fromCharCode(i);
         // on each loop add html to the var...
         html += `<button
-                    id = ${c}>` + c +
+                    id = ${c}
+                    onclick="btnClicked(id)">` + c +
                 `</button>`;
     }
     document.getElementById('keyboard-area').innerHTML = html;
 }
 
 createKeyboard();
+
+function btnClicked(id) {
+    alert(`${id} button clicked`);
+}
