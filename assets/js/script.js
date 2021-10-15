@@ -79,6 +79,7 @@ createAnswerArray();
  * @param {*} id 
  */
 function checkGuess(id) {
+    incrementGuesses();
     for (let i = 0; i < word.length; i++) {
         if (id == word[i]) {
             answerArray[i] = id;
