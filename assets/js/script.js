@@ -21,13 +21,11 @@
  */
 function checkGuess(id) {
     for (let i = 0; i < word.length; i++) {
-        console.log
         if (id == word[i]) {
             answerArray[i] = id;
             document.getElementById("word-area").innerHTML = answerArray.join(" ");
         }
     }
-
 }
 
 /**
@@ -41,15 +39,6 @@ function getKeyedValue() {
 createKeyboard();
 
 /**
- * called when keyboard btn clicked
- * @param {} id 
- */
-// function btnClicked(id) {
-//     alert(`${id} button clicked`);
-// }
-
-
-/**
  * choose a random word from the words array
  */
 function chooseWord() {
@@ -59,7 +48,6 @@ function chooseWord() {
     ];
 
     word = words[Math.floor(Math.random() * words.length)].toUpperCase();  
-
 }
 
 chooseWord();
@@ -70,7 +58,6 @@ let answerArray = [];
  * display the random word in the word-area as underscores for each letter
  */
  function createAnswerArray() {
-    
     let wordLength = word.length;
     for (let i = 0; i < wordLength; i++ ) {
       answerArray[i] = ("_ ");
@@ -80,6 +67,11 @@ let answerArray = [];
 
 createAnswerArray();
 
+/**
+ * if keydown is an ASCII letter convert it to a string and add it to the keyed-guess area.
+ * if it's the enter button call checkEmptyKeyGuess
+ * @param {*} event 
+ */
 document.onkeydown = function(event) {
     let keyCode = event.keyCode;
     if (keyCode > 64 && keyCode < 91) {
@@ -91,8 +83,14 @@ document.onkeydown = function(event) {
     }
   }
 
+  /**
+   * if keyed guess area is empty alert user, if not check the guess
+   */
   function checkEmptyKeyGuess() {
-      if (keyedGuess = document.getElementById("keyed-guess").innerHTML== "") {
+      let keyedGuess = document.getElementById("keyed-guess").innerHTML;
+      if (keyedGuess == "") {
         alert("no letter");
+      } else {
+        checkGuess(keyedGuess);
       }
   }
