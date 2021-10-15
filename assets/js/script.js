@@ -15,33 +15,12 @@
     document.getElementById('keyboard-area').innerHTML = html; 
 }
 
-/**
- * add the guessed letter to the word if it is in it
- * @param {*} id 
- */
-function checkGuess(id) {
-    for (let i = 0; i < word.length; i++) {
-        if (id == word[i]) {
-            answerArray[i] = id;
-            document.getElementById("word-area").innerHTML = answerArray.join(" ");
-        }
-    }
-}
-
-/**
- * get users keyed value and pass it to checkGuess()
- */
-function getKeyedValue() {
-    let keyedValue = document.getElementById("keyed-guess").innerHTML;
-    checkGuess(keyedValue);
-}
-
 createKeyboard();
 
 /**
  * choose a random word from the words array
  */
-function chooseWord() {
+ function chooseWord() {
     let words = [
         "PANCAKE",
         "CURRY"
@@ -72,11 +51,11 @@ createAnswerArray();
  * if it's the enter button call checkEmptyKeyGuess
  * @param {*} event 
  */
-document.onkeydown = function(event) {
+ document.onkeydown = function(event) {
     let keyCode = event.keyCode;
     if (keyCode > 64 && keyCode < 91) {
         let keyPress = String.fromCharCode(event.keyCode);
-      document.getElementById("keyed-guess").innerHTML = keyPress;
+        document.getElementById("keyed-guess").innerHTML = keyPress;
     }
     if (keyCode === 13) {
         checkEmptyKeyGuess();
@@ -86,11 +65,32 @@ document.onkeydown = function(event) {
   /**
    * if keyed guess area is empty alert user, if not check the guess
    */
-  function checkEmptyKeyGuess() {
-      let keyedGuess = document.getElementById("keyed-guess").innerHTML;
-      if (keyedGuess == "") {
-        alert("no letter");
-      } else {
-        checkGuess(keyedGuess);
-      }
+ function checkEmptyKeyGuess() {
+    let keyedGuess = document.getElementById("keyed-guess").innerHTML;
+    if (keyedGuess == "") {
+      alert("no letter");
+    } else {
+      checkGuess(keyedGuess);
+    }
+}
+
+/**
+ * increment guesses made and add the guessed letter to the word if it is in it 
+ * @param {*} id 
+ */
+function checkGuess(id) {
+    for (let i = 0; i < word.length; i++) {
+        if (id == word[i]) {
+            answerArray[i] = id;
+            document.getElementById("word-area").innerHTML = answerArray.join(" ");
+        }
+    }
+}
+
+/**
+ * add 1 to the number of guesses in the score-area
+ */
+  function incrementGuesses() {
+      let oldGuesses = parseInt(document.getElementById("guesses").innerHTML);
+      document.getElementById("guesses").innerHTML = ++oldGuesses;
   }
