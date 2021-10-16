@@ -85,6 +85,7 @@ function checkGuess(id) {
         if (id == word[i]) {
             answerArray[i] = id;
             document.getElementById("word-area").innerHTML = answerArray.join(" ");
+            incrementLettersFound();
             newMatches++;
         }     
     }
@@ -107,4 +108,12 @@ function checkGuess(id) {
   function incrementWrongGuesses() {
     let oldWrongGuesses = parseInt(document.getElementById("wrong-guesses").innerHTML);
     document.getElementById("wrong-guesses").innerHTML = ++oldWrongGuesses;
+}
+
+ /**
+   * add 1 to the number of letters-found with each guessed letter
+   */
+  function incrementLettersFound() {
+    let lettersFound = parseInt(document.getElementById("letters-found").innerHTML);
+    document.getElementById("letters-found").innerHTML = ++lettersFound;
 }
