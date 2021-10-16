@@ -80,18 +80,31 @@ createAnswerArray();
  */
 function checkGuess(id) {
     incrementGuesses();
+    let newMatches = 0;
     for (let i = 0; i < word.length; i++) {
         if (id == word[i]) {
             answerArray[i] = id;
             document.getElementById("word-area").innerHTML = answerArray.join(" ");
-        }
+            newMatches++;
+        }     
+    }
+    if (newMatches === 0) {
+        incrementWrongGuesses();
     }
 }
 
 /**
- * add 1 to the number of guesses in the score-area
+ * add 1 to the number of guesses in guesses-made on each guess
  */
   function incrementGuesses() {
       let oldGuesses = parseInt(document.getElementById("guesses").innerHTML);
       document.getElementById("guesses").innerHTML = ++oldGuesses;
   }
+
+  /**
+   * add 1 to the number of guesses in wrong-guesses on each wrong guess
+   */
+  function incrementWrongGuesses() {
+    let oldWrongGuesses = parseInt(document.getElementById("wrong-guesses").innerHTML);
+    document.getElementById("wrong-guesses").innerHTML = ++oldWrongGuesses;
+}
