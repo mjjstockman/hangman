@@ -91,8 +91,18 @@ function checkGuess(id) {
     }
     if (newMatches === 0) {
         incrementWrongGuesses();
+        updateGallows();
     }
 }
+
+function updateGallows() {
+    let gallows_img = document.getElementById("gallows-img");
+    let incorrectAnswers = document.getElementById("wrong-guesses").innerText;
+    gallows_img.src = `/assets/images/gallows${incorrectAnswers}.jpg`;
+    gallows_img.alt = `Hand-drawn gallows with the first ${incorrectAnswers} out of 10 parts`;
+  }
+
+  
 
 /**
  * add 1 to the number of guesses in guesses-made on each guess
