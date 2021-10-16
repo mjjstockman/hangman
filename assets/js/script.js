@@ -79,6 +79,7 @@ createAnswerArray();
  * @param {*} id 
  */
 function checkGuess(id) {
+    updateGuessedLetters(id);
     incrementGuesses();
     let newMatches = 0;
     for (let i = 0; i < word.length; i++) {
@@ -94,6 +95,15 @@ function checkGuess(id) {
         updateGallows();
     }
 }
+// array of guessed letters 
+let guessedLetters = [];
+
+function updateGuessedLetters(letter) {
+    guessedLetters.push(letter);
+    for (letter in guessedLetters) {
+        document.getElementById("guessed-letters").innerHTML = guessedLetters.join(" ");
+    }
+  }
 
 function updateGallows() {
     let gallows_img = document.getElementById("gallows-img");
