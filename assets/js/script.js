@@ -98,6 +98,14 @@ function checkGuess(id) {
         updateGallows();
     }
 }
+
+/**
+ * clear the enter guess area 
+ */
+ function clearGuess() {
+  document.getElementById("keyed-guess").innerHTML = "";
+}
+
 // array of guessed letters 
 let guessedLetters = [];
 
