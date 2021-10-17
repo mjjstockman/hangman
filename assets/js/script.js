@@ -58,6 +58,7 @@ createAnswerArray();
     if (keyCode > 64 && keyCode < 91) {
         let keyPress = String.fromCharCode(event.keyCode);
         document.getElementById("keyed-guess").innerHTML = keyPress;
+        clearMessage();
     }
     // check submit-btn is not focused so enter key doesn't call checkEmptyGuess twice
     if (keyCode === 13 && isFocused === false) {
@@ -124,12 +125,19 @@ function updateGuessedLetters(letter) {
   }
 
 function checkDuplicate(id) {
+  clearMessage();
   if (guessedLetters.includes(id)) {
     document.getElementById("message-area").innerHTML = `${id} has already been chosen`;
   } else {
     checkGuess(id);
   }
 }
+
+function clearMessage() {
+  document.getElementById("message-area").innerHTML = "";
+}
+
+
 
 /**
  * update gallows img using incorrectAnswers var
