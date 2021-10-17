@@ -74,7 +74,7 @@ createAnswerArray();
  function checkEmptyKeyGuess() {
     let keyedGuess = document.getElementById("keyed-guess").innerHTML;
     if (keyedGuess == "") {
-      alert("no letter");
+      document.getElementById("message-area").innerHTML = "No letter!!";
     } else {
       checkDuplicate(keyedGuess);
     }
@@ -125,7 +125,7 @@ function updateGuessedLetters(letter) {
 
 function checkDuplicate(id) {
   if (guessedLetters.includes(id)) {
-    alert(`${id} has already been chosen`);
+    document.getElementById("message-area").innerHTML = `${id} has already been chosen`;
   } else {
     checkGuess(id);
   }
