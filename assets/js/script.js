@@ -62,8 +62,11 @@ createAnswerArray();
     // check submit-btn is not focused so enter key doesn't call checkEmptyGuess twice
     if (keyCode === 13 && isFocused === false) {
         checkEmptyKeyGuess();
+    } if (keyCode === 8) {
+      clearGuess();
     }
   }
+
 
   /**
    * if keyed guess area is empty alert user, if not check the guess
