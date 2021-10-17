@@ -167,6 +167,9 @@ function updateGallows() {
   function incrementWrongGuesses() {
     let oldWrongGuesses = parseInt(document.getElementById("wrong-guesses").innerHTML);
     document.getElementById("wrong-guesses").innerHTML = ++oldWrongGuesses;
+    if (oldWrongGuesses == 10) {
+      gameOver();
+    }
 }
 
  /**
@@ -175,4 +178,9 @@ function updateGallows() {
   function incrementLettersFound() {
     let lettersFound = parseInt(document.getElementById("letters-found").innerHTML);
     document.getElementById("letters-found").innerHTML = ++lettersFound;
+}
+
+function gameOver() {
+    // ????? HOW NOT CALL UNTIL GALLOWS, SCORE-AREA ETC UPDATED ??????
+    alert("GAME OVER@@@!!");
 }
