@@ -16,6 +16,7 @@
 }
 
 createKeyboard();
+updateGallows();
 
 /**
  * choose a random word from the words array
