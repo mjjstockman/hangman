@@ -52,15 +52,24 @@ createAnswerArray();
  * @param {*} event 
  */
  document.onkeydown = function(event) {
+   let submitBtn = document.getElementById("submit-btn");
     let keyCode = event.keyCode;
+    let isFocused = (document.activeElement === submitBtn);
     if (keyCode > 64 && keyCode < 91) {
         let keyPress = String.fromCharCode(event.keyCode);
         document.getElementById("keyed-guess").innerHTML = keyPress;
     }
-    if (keyCode === 13) {
+    // check submit-btn is not focused so enter key doesn't call checkEmptyGuess twice
+    if (keyCode === 13 && isFocused === false) {
         checkEmptyKeyGuess();
     }
   }
+
+  // dummy element
+var dummyEl = document.getElementById('myID');
+
+// check for focus
+var isFocused = (document.activeElement === dummyEl);
 
   /**
    * if keyed guess area is empty alert user, if not check the guess
