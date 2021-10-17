@@ -176,11 +176,16 @@ function updateGallows() {
    * add 1 to the number of letters-found with each guessed letter
    */
   function incrementLettersFound() {
-    let lettersFound = parseInt(document.getElementById("letters-found").innerHTML);
-    document.getElementById("letters-found").innerHTML = ++lettersFound;
+    let oldLettersFound = parseInt(document.getElementById("letters-found").innerHTML);
+    document.getElementById("letters-found").innerHTML = ++oldLettersFound;
 }
 
 function gameOver() {
     // ????? HOW NOT CALL UNTIL GALLOWS, SCORE-AREA ETC UPDATED ??????
     alert("GAME OVER@@@!!");
+}
+
+function gameWon() {
+  // ????? HOW NOT CALL UNTIL GALLOWS, SCORE-AREA ETC UPDATED ??????
+  alert("GAME WON!!!!!!!!!!!");
 }
