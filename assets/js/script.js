@@ -9,7 +9,7 @@
         // on each loop add html to the var...
         html += `<button
                     id = ${c}
-                    onclick="checkGuess(id)">` + c +
+                    onclick="checkDuplicate(id)">` + c +
                 `</button>`;
     }
     document.getElementById('keyboard-area').innerHTML = html; 
@@ -76,7 +76,7 @@ createAnswerArray();
     if (keyedGuess == "") {
       alert("no letter");
     } else {
-      checkGuess(keyedGuess);
+      checkDuplicate(keyedGuess);
     }
 }
 
@@ -85,7 +85,6 @@ createAnswerArray();
  * @param {*} id 
  */
 function checkGuess(id) {
-    checkDuplicate(id);
     updateGuessedLetters(id);
     incrementGuesses();
     let newMatches = 0;
@@ -127,6 +126,8 @@ function updateGuessedLetters(letter) {
 function checkDuplicate(id) {
   if (guessedLetters.includes(id)) {
     alert(`${id} has already been chosen`);
+  } else {
+    checkGuess(id);
   }
 }
 
