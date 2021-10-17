@@ -65,7 +65,7 @@ createAnswerArray();
     if (keyCode === 13 && isFocused === false) {
         checkEmptyKeyGuess();
     } if (keyCode === 8) {
-      clearGuess();
+      clearKeyGuess();
     }
   }
 
@@ -107,7 +107,7 @@ function checkGuess(id) {
 /**
  * clear the enter guess area 
  */
- function clearKeyedGuess() {
+ function clearKeyGuess() {
   document.getElementById("keyed-guess").innerHTML = "";
 }
 
@@ -127,7 +127,7 @@ function updateGuessedLetters(letter) {
 
 function checkDuplicate(id) {
   clearMessage();
-  clearKeyedGuess();
+  clearKeyGuess();
   if (guessedLetters.includes(id)) {
     document.getElementById("message-area").innerHTML = `${id} has already been chosen`;
   } else {
