@@ -178,13 +178,23 @@ function updateGallows() {
   function incrementLettersFound() {
     let oldLettersFound = parseInt(document.getElementById("letters-found").innerHTML);
     document.getElementById("letters-found").innerHTML = ++oldLettersFound;
-}
+    if (oldLettersFound  == word.length) {
+      gameWon();
+    }
+  }
 
+
+/**
+ * alert when the game is lost
+ */
 function gameOver() {
     // ????? HOW NOT CALL UNTIL GALLOWS, SCORE-AREA ETC UPDATED ??????
     alert("GAME OVER@@@!!");
 }
 
+/**
+ * alert when the game is won
+ */
 function gameWon() {
   // ????? HOW NOT CALL UNTIL GALLOWS, SCORE-AREA ETC UPDATED ??????
   alert("GAME WON!!!!!!!!!!!");
