@@ -85,6 +85,7 @@ createAnswerArray();
  * @param {*} id 
  */
 function checkGuess(id) {
+    checkDuplicate(id);
     updateGuessedLetters(id);
     incrementGuesses();
     let newMatches = 0;
@@ -122,6 +123,12 @@ function updateGuessedLetters(letter) {
         document.getElementById("guessed-letters").innerHTML = guessedLetters.join(" ");
     }
   }
+
+function checkDuplicate(id) {
+  if (guessedLetters.includes(id)) {
+    alert(`${id} has already been chosen`);
+  }
+}
 
 /**
  * update gallows img using incorrectAnswers var
