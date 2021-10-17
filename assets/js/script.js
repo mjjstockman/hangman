@@ -65,12 +65,6 @@ createAnswerArray();
     }
   }
 
-  // dummy element
-var dummyEl = document.getElementById('myID');
-
-// check for focus
-var isFocused = (document.activeElement === dummyEl);
-
   /**
    * if keyed guess area is empty alert user, if not check the guess
    */
