@@ -101,6 +101,10 @@ function checkGuess(id) {
 // array of guessed letters 
 let guessedLetters = [];
 
+/**
+ * display guessed letters 
+ * @param {*} letter 
+ */
 function updateGuessedLetters(letter) {
     guessedLetters.push(letter);
     for (letter in guessedLetters) {
@@ -108,6 +112,9 @@ function updateGuessedLetters(letter) {
     }
   }
 
+/**
+ * update gallows img using incorrectAnswers var
+ */
 function updateGallows() {
     let gallows_img = document.getElementById("gallows-img");
     let incorrectAnswers = document.getElementById("wrong-guesses").innerText;
