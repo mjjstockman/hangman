@@ -106,7 +106,7 @@ function checkGuess(id) {
 /**
  * clear the enter guess area 
  */
- function clearGuess() {
+ function clearKeyedGuess() {
   document.getElementById("keyed-guess").innerHTML = "";
 }
 
@@ -126,6 +126,7 @@ function updateGuessedLetters(letter) {
 
 function checkDuplicate(id) {
   clearMessage();
+  clearKeyedGuess();
   if (guessedLetters.includes(id)) {
     document.getElementById("message-area").innerHTML = `${id} has already been chosen`;
   } else {
