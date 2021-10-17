@@ -1,3 +1,12 @@
+const keyboardArea = document.getElementById('keyboard-area');
+const words = [
+  "PANCAKE",
+  "CURRY"
+];
+const wordArea = document.getElementById('word-area');
+const submitBtn = document.getElementById("submit-btn");
+
+
 /**
  * display the keyboard in the keyboard-area, giving each button an id of their value
  */
@@ -12,7 +21,7 @@
                     onclick="checkDuplicate(id)">` + c +
                 `</button>`;
     }
-    document.getElementById('keyboard-area').innerHTML = html; 
+    keyboardArea.innerHTML = html; 
 }
 
 createKeyboard();
@@ -22,11 +31,6 @@ updateGallows();
  * choose a random word from the words array
  */
  function chooseWord() {
-    let words = [
-        "PANCAKE",
-        "CURRY"
-    ];
-
     word = words[Math.floor(Math.random() * words.length)].toUpperCase();  
 }
 
@@ -42,7 +46,9 @@ let answerArray = [];
     for (let i = 0; i < wordLength; i++ ) {
       answerArray[i] = ("_ ");
     }
-    document.getElementById('word-area').innerHTML = answerArray.join("");
+    // document.getElementById('word-area').innerHTML = answerArray.join("");
+    wordArea.innerHTML = answerArray.join("");
+    
 }
 
 createAnswerArray();
@@ -53,7 +59,7 @@ createAnswerArray();
  * @param {*} event 
  */
  document.onkeydown = function(event) {
-   let submitBtn = document.getElementById("submit-btn");
+  //  let submitBtn = document.getElementById("submit-btn");
     let keyCode = event.keyCode;
     let isFocused = (document.activeElement === submitBtn);
     if (keyCode > 64 && keyCode < 91) {
