@@ -85,7 +85,7 @@ const oldLettersFound = document.getElementById("letters-found");
    */
  function checkEmptyKeyGuess() {
     let keyedGuess = document.getElementById("keyed-guess").innerHTML;
-    if (keyedGuess == "") {
+    if (keyedGuess === "") {
       messageArea.innerHTML = "No letter!!";
       // document.getElementById("message-area").innerHTML = "No letter!!";
     } else {
