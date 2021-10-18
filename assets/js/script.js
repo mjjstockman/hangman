@@ -11,6 +11,9 @@ const messageArea = document.getElementById("message-area");
 const guessedLettersArea = document.getElementById("guessed-letters");
 const gallowsImg = document.getElementById("gallows-img");
 const wrongGuessesArea = document.getElementById("wrong-guesses");
+const oldGuesses = document.getElementById("guesses");
+const oldWrongGuesses = document.getElementById("wrong-guesses");
+const oldLettersFound = document.getElementById("letters-found");
 
 
 
@@ -167,16 +170,18 @@ function updateGallows() {
  * add 1 to the number of guesses in guesses-made on each guess
  */
   function incrementGuesses() {
-      let oldGuesses = parseInt(document.getElementById("guesses").innerHTML);
-      document.getElementById("guesses").innerHTML = ++oldGuesses;
+    ++oldGuesses.innerHTML;
+      // let oldGuesses = parseInt(document.getElementById("guesses").innerHTML);
+      // document.getElementById("guesses").innerHTML = ++oldGuesses;
   }
 
   /**
    * add 1 to the number of guesses in wrong-guesses on each wrong guess
    */
   function incrementWrongGuesses() {
-    let oldWrongGuesses = parseInt(document.getElementById("wrong-guesses").innerHTML);
-    document.getElementById("wrong-guesses").innerHTML = ++oldWrongGuesses;
+    ++oldWrongGuesses.innerHTML;
+    // let oldWrongGuesses = parseInt(document.getElementById("wrong-guesses").innerHTML);
+    // document.getElementById("wrong-guesses").innerHTML = ++oldWrongGuesses;
     if (oldWrongGuesses == 10) {
       gameOver();
     }
@@ -186,8 +191,9 @@ function updateGallows() {
    * add 1 to the number of letters-found with each guessed letter
    */
   function incrementLettersFound() {
-    let oldLettersFound = parseInt(document.getElementById("letters-found").innerHTML);
-    document.getElementById("letters-found").innerHTML = ++oldLettersFound;
+    ++oldLettersFound.innerHTML;
+    // let oldLettersFound = parseInt(document.getElementById("letters-found").innerHTML);
+    // document.getElementById("letters-found").innerHTML = ++oldLettersFound;
     if (oldLettersFound  == word.length) {
       gameWon();
     }
