@@ -5,6 +5,10 @@ const words = [
 ];
 const wordArea = document.getElementById('word-area');
 const submitBtn = document.getElementById("submit-btn");
+const keyedGuess = document.getElementById("keyed-guess");
+const isSubmitFocused = document.activeElement === submitBtn;
+const messageArea = document.getElementById("message-area");
+
 
 
 /**
@@ -61,14 +65,14 @@ createAnswerArray();
  document.onkeydown = function(event) {
   //  let submitBtn = document.getElementById("submit-btn");
     let keyCode = event.keyCode;
-    let isFocused = (document.activeElement === submitBtn);
+    // let isSubmitFocused = (document.activeElement === submitBtn);
     if (keyCode > 64 && keyCode < 91) {
         let keyPress = String.fromCharCode(event.keyCode);
-        document.getElementById("keyed-guess").innerHTML = keyPress;
+        keyedGuess.innerHTML = keyPress;
         clearMessage();
     }
     // check submit-btn is not focused so enter key doesn't call checkEmptyGuess twice
-    if (keyCode === 13 && isFocused === false) {
+    if (keyCode === 13 && isSubmitFocused === false) {
         checkEmptyKeyGuess();
     } if (keyCode === 8) {
       clearKeyGuess();
@@ -82,7 +86,8 @@ createAnswerArray();
  function checkEmptyKeyGuess() {
     let keyedGuess = document.getElementById("keyed-guess").innerHTML;
     if (keyedGuess == "") {
-      document.getElementById("message-area").innerHTML = "No letter!!";
+      messageArea.innerHTML = "No letter!!";
+      // document.getElementById("message-area").innerHTML = "No letter!!";
     } else {
       checkDuplicate(keyedGuess);
     }
@@ -99,7 +104,7 @@ function checkGuess(id) {
     for (let i = 0; i < word.length; i++) {
         if (id == word[i]) {
             answerArray[i] = id;
-            document.getElementById("word-area").innerHTML = answerArray.join(" ");
+            wordArea.innerHTML = answerArray.join(" ");
             incrementLettersFound();
             newMatches++;
         }     
@@ -114,7 +119,7 @@ function checkGuess(id) {
  * clear the enter guess area 
  */
  function clearKeyGuess() {
-  document.getElementById("keyed-guess").innerHTML = "";
+  keyedGuess.innerHTML = "";
 }
 
 // array of guessed letters 
@@ -135,14 +140,14 @@ function checkDuplicate(id) {
   clearMessage();
   clearKeyGuess();
   if (guessedLetters.includes(id)) {
-    document.getElementById("message-area").innerHTML = `${id} has already been chosen`;
+    messageArea.innerHTML = `${id} has already been chosen`;
   } else {
     checkGuess(id);
   }
 }
 
 function clearMessage() {
-  document.getElementById("message-area").innerHTML = "";
+  messageArea.innerHTML = "";
 }
 
 
