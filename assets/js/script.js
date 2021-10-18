@@ -8,6 +8,9 @@ const submitBtn = document.getElementById("submit-btn");
 const keyedGuess = document.getElementById("keyed-guess");
 const isSubmitFocused = document.activeElement === submitBtn;
 const messageArea = document.getElementById("message-area");
+const guessedLettersArea = document.getElementById("guessed-letters");
+const gallowsImg = document.getElementById("gallows-img");
+const wrongGuessesArea = document.getElementById("wrong-guesses");
 
 
 
@@ -132,7 +135,8 @@ let guessedLetters = [];
 function updateGuessedLetters(letter) {
     guessedLetters.push(letter);
     for (letter in guessedLetters) {
-        document.getElementById("guessed-letters").innerHTML = guessedLetters.join(" ");
+      guessedLettersArea.innerHTML = guessedLetters.join(" ");
+      // document.getElementById("guessed-letters").innerHTML = guessedLetters.join(" ");
     }
   }
 
@@ -150,19 +154,14 @@ function clearMessage() {
   messageArea.innerHTML = "";
 }
 
-
-
 /**
- * update gallows img using incorrectAnswers var
+ * update gallows img using wrongAnswers var
  */
 function updateGallows() {
-    let gallows_img = document.getElementById("gallows-img");
-    let incorrectAnswers = document.getElementById("wrong-guesses").innerText;
-    gallows_img.src = `/assets/images/gallows${incorrectAnswers}.jpg`;
-    gallows_img.alt = `Hand-drawn gallows with the first ${incorrectAnswers} out of 10 parts`;
+    let wrongGuessesNum = wrongGuessesArea.innerText;
+    gallowsImg.src = `/assets/images/gallows${wrongGuessesNum}.jpg`;
+    gallowsImg.alt = `Hand-drawn gallows with the first ${wrongGuessesNum} out of 10 parts`;
   }
-
-  
 
 /**
  * add 1 to the number of guesses in guesses-made on each guess
