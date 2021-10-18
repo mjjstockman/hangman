@@ -15,7 +15,7 @@ const oldGuesses = document.getElementById("guesses");
 const oldWrongGuesses = document.getElementById("wrong-guesses");
 const oldLettersFound = document.getElementById("letters-found");
 
-
+// let answerArray = [];
 
 /**
  * display the keyboard in the keyboard-area, giving each button an id of their value
@@ -34,8 +34,7 @@ const oldLettersFound = document.getElementById("letters-found");
     keyboardArea.innerHTML = html; 
 }
 
-createKeyboard();
-updateGallows();
+
 
 /**
  * choose a random word from the words array
@@ -44,9 +43,6 @@ updateGallows();
     word = words[Math.floor(Math.random() * words.length)].toUpperCase();  
 }
 
-chooseWord();
-
-let answerArray = [];
 
 /**
  * display the random word in the word-area as underscores for each letter
@@ -60,8 +56,6 @@ let answerArray = [];
     wordArea.innerHTML = answerArray.join("");
     
 }
-
-createAnswerArray();
 
 /**
  * if keydown is an ASCII letter convert it to a string and add it to the keyed-guess area.
@@ -215,3 +209,21 @@ function gameWon() {
   // ????? HOW NOT CALL UNTIL GALLOWS, SCORE-AREA ETC UPDATED ??????
   alert("GAME WON!!!!!!!!!!!");
 }
+
+function setUp(){
+  chooseWord();
+  guessedLettersArea.innerHTML = "";
+  wrongGuessesArea.innerHTML = "";
+  oldGuesses.innerHTML = 0;
+  oldWrongGuesses.innerHTML = 0;
+  oldLettersFound.innerHTML = 0;
+  guessedLetters = [];
+  answerArray = [];
+  createAnswerArray();
+  createKeyboard();
+  updateGallows();
+  clearMessage();
+  clearKeyGuess();
+}
+
+document.onload = setUp()
