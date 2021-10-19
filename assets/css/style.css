@@ -19,7 +19,7 @@ body, button {
 	font-size: 1.6rem;
 }
 
-h1, #score-area, #word-area {
+h1, #score-area, #word-area, #guessed-area, #guess-area {
 	text-align: center;
 }
 
@@ -62,13 +62,13 @@ button:hover {
 
 #keyboard-area {
 	float: left;
-	width: 50%;
+	width: 100%;
 	background-color: pink;
 }
 
 #guessed-area {
 	background-color: blue;
-	width: 35%;
+	width: 100%;
 	float: left;
 }
 
