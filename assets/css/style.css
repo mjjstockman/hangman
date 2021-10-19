@@ -29,6 +29,10 @@ h1, #score-area, #word-area, #guessed-area, #guess-area, #message-area, #keyboar
 	text-align: center;
 }
 
+#word-area {
+	font-size: 4rem;
+}
+
 h1 {
 	font-size: 2rem;
 }
