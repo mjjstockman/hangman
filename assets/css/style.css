@@ -78,6 +78,10 @@ button:hover {
 	float: left;
 }
 
+#guess-area > button {
+	float: right;
+}
+
 
 #gallows-area {
 	background-color: brown;
