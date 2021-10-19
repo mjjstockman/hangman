@@ -96,6 +96,7 @@ const oldLettersFound = document.getElementById("letters-found");
  * @param {*} id 
  */
 function checkGuess(id) {
+    disableLetter(id);
     updateGuessedLetters(id);
     incrementGuesses();
     let newMatches = 0;
@@ -111,6 +112,10 @@ function checkGuess(id) {
         incrementWrongGuesses();
         updateGallows();
     }
+}
+
+function disableLetter(id) {
+  document.getElementById(id).disabled = true;
 }
 
 /**
