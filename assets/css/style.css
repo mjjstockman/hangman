@@ -19,7 +19,7 @@ body, button {
 	font-size: 1.6rem;
 }
 
-h1, #score-area, #word-area, #guessed-area, #guess-area {
+h1, #score-area, #word-area, #guessed-area, #guess-area, #message-area {
 	text-align: center;
 }
 
