@@ -6,7 +6,6 @@ const words = [
 const wordArea = document.getElementById('word-area');
 const submitBtn = document.getElementById("submit-btn");
 const keyedGuess = document.getElementById("keyed-guess");
-const isSubmitFocused = document.activeElement === submitBtn;
 const messageArea = document.getElementById("message-area");
 const guessedLettersArea = document.getElementById("guessed-letters");
 const gallowsImg = document.getElementById("gallows-img");
@@ -63,17 +62,16 @@ const oldLettersFound = document.getElementById("letters-found");
  * @param {*} event 
  */
  document.onkeydown = function(event) {
-  //  let submitBtn = document.getElementById("submit-btn");
     let keyCode = event.keyCode;
-    // let isSubmitFocused = (document.activeElement === submitBtn);
     if (keyCode > 64 && keyCode < 91) {
         let keyPress = String.fromCharCode(event.keyCode);
         keyedGuess.innerHTML = keyPress;
         clearMessage();
     }
-    // check submit-btn is not focused so enter key doesn't call checkEmptyGuess twice
-    if (keyCode === 13 && isSubmitFocused === false) {
-        checkEmptyKeyGuess();
+    // remove focus when enter pressed so checkEmptyKeyGuess is not called twice
+    if (keyCode === 13) {
+      document.activeElement.blur();
+      checkEmptyKeyGuess();
     } if (keyCode === 8) {
       clearKeyGuess();
     }
