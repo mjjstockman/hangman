@@ -14,6 +14,12 @@ html {
     font-size: 62.5%;
 }
 
+img {
+	width: 100%;
+  	height: auto;
+}
+
+
 body, button {
     font-family: 'Indie Flower', cursive;
 	font-size: 1.6rem;
@@ -84,6 +90,7 @@ button:hover {
 
 
 #gallows-area {
+	width: 100%;
 	background-color: brown;
 	float: left;
 }
