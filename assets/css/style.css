@@ -16,7 +16,15 @@ html {
 
 body, button {
     font-family: 'Indie Flower', cursive;
-	font-size: 4rem;
+	font-size: 1.6rem;
+}
+
+h1, #score-area, #word-area {
+	text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
 }
 
 button {
