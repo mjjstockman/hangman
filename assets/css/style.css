@@ -100,9 +100,9 @@ button:hover {
 
 
 #gallows-area {
-	/* width: 100%; */
 	background-color: brown;
-	float: left;
+	display: block;
+	margin: 0 auto;
 }
 
 #message-area {
