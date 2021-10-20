@@ -103,6 +103,7 @@ button:hover {
 	background-color: brown;
 	display: block;
 	margin: 0 auto;
+	max-width: 300px;
 }
 
 #message-area {
