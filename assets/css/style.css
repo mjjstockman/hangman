@@ -15,10 +15,11 @@ html {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
   	height: auto;
+	margin: 0 auto;
+	display: block;
 }
-
 
 body, button {
     font-family: 'Indie Flower', cursive;
@@ -106,5 +107,13 @@ button:hover {
 #message-area {
 	color: red;
 }
+
+
+
+
+
+
+
+
 
 
