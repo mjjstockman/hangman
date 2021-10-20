@@ -101,7 +101,6 @@ button:hover {
 
 #gallows-area {
 	background-color: brown;
-	display: block;
 	margin: 0 auto;
 	max-width: 300px;
 }
@@ -114,7 +113,22 @@ button:hover {
 	clear: both;
 }
 
-
+/* media queries */
+ @media only screen and (min-width: 500px) {
+	  #gallows-area {
+	    background-color: lightblue;
+	     float: left;
+		 /* overwrite max-width: 300px */
+		 max-width: 50%;
+		 width: 50%;
+	   }
+	
+	   #keyboard-area {
+	     background-color: lightblue;
+	     float: left;
+	     width: 50%;
+	    }
+  }
 
 
 
