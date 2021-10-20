@@ -111,6 +111,7 @@ button:hover {
 
 #restart-area {
 	clear: both;
+	float: right;
 }
 
 /* media queries */
