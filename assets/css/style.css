@@ -15,10 +15,11 @@ html {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
   	height: auto;
-	margin: 0 auto;
-	display: block;
+	  /* max-width: 100%; */
+	/* margin: 0 auto;
+	display: block; */
 }
 
 body, button {
@@ -99,13 +100,17 @@ button:hover {
 
 
 #gallows-area {
-	width: 100%;
+	/* width: 100%; */
 	background-color: brown;
 	float: left;
 }
 
 #message-area {
 	color: red;
+}
+
+#restart-area {
+	clear: both;
 }
 
 
