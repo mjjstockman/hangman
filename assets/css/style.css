@@ -77,6 +77,9 @@ button:hover {
 	/* text-align: center; */
 }
 
+#keyboard-area > button {
+	font-size: 1.8rem;
+}
 #guessed-area {
 	background-color: blue;
 	width: 100%;
