@@ -144,8 +144,6 @@ button:hover {
 		#gallows-and-keyboard {
 			display: flex;
 			align-items: center;
-			
-
 		}
 
 		/* button {
@@ -153,11 +151,20 @@ button:hover {
 		} */
   }
 
+
+
   @media only screen and (min-width: 700px) {
+	#keyboard-area > button {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (min-width: 850px) {
 	#keyboard-area > button {
 		font-size: 2.5rem;
 	}
 }
+
 
 
 
