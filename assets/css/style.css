@@ -127,7 +127,7 @@ button:hover {
 	     /* float: left; */
 		 /* overwrite max-width: 300px */
 		 max-width: 480px;
-		 width: 50%;
+		 /* width: 50%; */
 	   }
 	
 	   #keyboard-area {
