@@ -157,6 +157,7 @@ button:hover {
 		 font-size: 4rem;
 	     /* float: left; */
 	     max-width: 70%;
+		 margin-left: 5%;
 	    }
 
 		#keyboard-area > button {
@@ -166,6 +167,7 @@ button:hover {
 		#gallows-and-keyboard {
 			display: flex;
 			align-items: center;
+			padding: 30px;
 		}
 
 		/* button {
