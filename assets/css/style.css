@@ -38,6 +38,8 @@ h1 {
 	font-size: 3rem;
 }
 
+
+
 button {
 	font-size: 1rem;
 	box-shadow:  0px 20px 30px -10px rgba(38, 57, 77);
@@ -118,6 +120,8 @@ button:hover {
 
 #message-area {
 	color: red;
+	height: 20px;
+	background-color: black;
 }
 
 #restart-area {
