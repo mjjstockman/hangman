@@ -26,6 +26,10 @@ body, button {
 	font-size: 1.6rem;
 }
 
+body {
+	background-image: url(/assets/images/unsplash-paper.jpg);
+}
+
 h1, #score-area, #word-area, #guessed-area, #guess-area, #message-area, #keyboard-area {
 	text-align: center;
 }
