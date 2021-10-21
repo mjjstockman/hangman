@@ -126,7 +126,7 @@ button:hover {
 	    background-color: lightblue;
 	     /* float: left; */
 		 /* overwrite max-width: 300px */
-		 max-width: 490px;
+		 max-width: 30%;
 		 /* width: 50%; */
 	   }
 	
@@ -134,16 +134,18 @@ button:hover {
 	     background-color: lightblue;
 		 font-size: 4rem;
 	     /* float: left; */
-	     width: 50%;
+	     max-width: 70%;
 	    }
 
 		#keyboard-area > button {
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 
 		#gallows-and-keyboard {
 			display: flex;
 			align-items: center;
+			
+
 		}
 
 		/* button {
