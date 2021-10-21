@@ -73,7 +73,7 @@ button:hover {
 }
 
 #keyboard-area {
-	float: left;
+	/* float: left; */
 	width: 100%;
 	background-color: pink;
 	/* text-align: center; */
@@ -85,13 +85,13 @@ button:hover {
 #guessed-area {
 	background-color: blue;
 	width: 100%;
-	float: left;
+	/* float: left; */
 }
 
 #guess-area {
 	width: 100%;
 	background-color: yellow;
-	float: left;
+	/* float: left; */
 }
 
 #guess-area > button {
@@ -121,7 +121,7 @@ button:hover {
 	}
 	  #gallows-area {
 	    background-color: lightblue;
-	     float: left;
+	     /* float: left; */
 		 /* overwrite max-width: 300px */
 		 max-width: 50%;
 		 width: 50%;
@@ -129,9 +129,14 @@ button:hover {
 	
 	   #keyboard-area {
 	     background-color: lightblue;
-	     float: left;
+	     /* float: left; */
 	     width: 50%;
 	    }
+
+		#gallows-and-keyboard {
+			display: flex;
+			align-items: center;
+		}
   }
 
 
