@@ -170,9 +170,9 @@ button:hover {
 			padding: 30px;
 		}
 
-		/* button {
-			font-size: 4rem;
-		} */
+		button {
+			font-size: 2rem;
+		}
   }
 
 
