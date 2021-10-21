@@ -103,6 +103,10 @@ button:hover {
 	float: right;
 }
 
+#submit-btn {
+	margin-left: 50px;
+}
+
 
 #gallows-area {
 	background-color: brown;
