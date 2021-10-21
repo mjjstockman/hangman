@@ -64,19 +64,19 @@ button:hover {
 #word-area {
 	/* float: left; */
 	width: 100%;
-	background-color: red;
+	/* background-color: red; */
 }
 
 #score-area {
 	/* float: left; */
 	width: 100%;
-	background-color: green;
+	/* background-color: green; */
 }
 
 #keyboard-area {
 	/* float: left; */
 	width: 100%;
-	background-color: pink;
+	/* background-color: pink; */
 	/* text-align: center; */
 }
 
@@ -85,14 +85,14 @@ button:hover {
 }
 
 #guessed-area {
-	background-color: blue;
+	/* background-color: blue; */
 	width: 100%;
 	/* float: left; */
 }
 
 #guess-area {
 	width: 100%;
-	background-color: yellow;
+	/* background-color: yellow; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -111,7 +111,7 @@ button:hover {
 
 
 #gallows-area {
-	background-color: brown;
+	/* background-color: brown; */
 	margin: 0 auto;
 	max-width: 300px;
 	/* max-height: 100px; */
@@ -121,7 +121,7 @@ button:hover {
 #message-area {
 	color: red;
 	height: 20px;
-	background-color: black;
+	/* background-color: black; */
 }
 
 #restart-area {
@@ -140,7 +140,7 @@ button:hover {
 	}
 
 	  #gallows-area {
-	    background-color: lightblue;
+	    /* background-color: lightblue; */
 	     /* float: left; */
 		 /* overwrite max-width: 300px */
 		 max-width: 30%;
@@ -148,7 +148,7 @@ button:hover {
 	   }
 	
 	   #keyboard-area {
-	     background-color: lightblue;
+	     /* background-color: lightblue; */
 		 font-size: 4rem;
 	     /* float: left; */
 	     max-width: 70%;
