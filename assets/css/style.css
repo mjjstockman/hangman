@@ -91,6 +91,11 @@ button:hover {
 #guess-area {
 	width: 100%;
 	background-color: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* text-align: center; */
 	/* float: left; */
 }
 
