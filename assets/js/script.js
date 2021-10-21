@@ -65,7 +65,7 @@ const oldLettersFound = document.getElementById("letters-found");
     let keyCode = event.keyCode;
     if (keyCode > 64 && keyCode < 91) {
         let keyPress = String.fromCharCode(event.keyCode);
-        keyedGuess.innerHTML = ` &nbsp; ${keyPress}`;
+        keyedGuess.innerHTML = keyPress;
         clearMessage();
     }
     // remove focus when enter pressed so checkEmptyKeyGuess is not called twice
