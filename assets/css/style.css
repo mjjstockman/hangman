@@ -60,45 +60,15 @@ button:hover {
 	border: none;
 }
   
-
-#word-area {
-	/* float: left; */
-	width: 100%;
-	/* background-color: red; */
-}
-
-#score-area {
-	/* float: left; */
-	width: 100%;
-	/* background-color: green; */
-}
-
-#keyboard-area {
-	/* float: left; */
-	width: 100%;
-	/* background-color: pink; */
-	/* text-align: center; */
-}
-
 #keyboard-area > button {
 	font-size: 1.8rem;
 }
 
-#guessed-area {
-	/* background-color: blue; */
-	width: 100%;
-	/* float: left; */
-}
 
 #guess-area {
-	width: 100%;
-	/* background-color: yellow; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-	/* text-align: center; */
-	/* float: left; */
 }
 
 #guess-area > button {
@@ -109,19 +79,14 @@ button:hover {
 	margin-left: 50px;
 }
 
-
 #gallows-area {
-	/* background-color: brown; */
 	margin: 0 auto;
 	max-width: 300px;
-	/* max-height: 100px; */
-	
 }
 
 #message-area {
 	color: red;
 	height: 20px;
-	/* background-color: black; */
 }
 
 #restart-area {
@@ -141,17 +106,11 @@ button:hover {
 	}
 
 	  #gallows-area {
-	    /* background-color: lightblue; */
-	     /* float: left; */
-		 /* overwrite max-width: 300px */
 		 max-width: 30%;
-		 /* width: 50%; */
 	   }
 	
 	   #keyboard-area {
-	     /* background-color: lightblue; */
 		 font-size: 4rem;
-	     /* float: left; */
 	     max-width: 70%;
 		 margin-left: 5%;
 	    }
