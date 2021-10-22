@@ -90,89 +90,64 @@ Black and white were mainly used, to convey a child like, hand-drawn aesthetic. 
 
 ## Typography
 
-[Google Fonts](https://fonts.google.com/specimen/Indie+Flower) was used to find a hand-drawn style font.  A fallback option of cursive.
+[Google Fonts](https://fonts.google.com/specimen/Indie+Flower) was used to find a hand-drawn style font.  A fallback option of cursive is used.
 
 
 [Back to top ⇧](#Hull-College)
 
 # Features
 
-## Navigation and Header
+## Score Area
 
-The navigation bar allows the user to easily select which area of the site they wish to view. It will be located at the top of the site as this is common practice and is the area where most users eyes will be initially drawn to. It will be 'sticky', meaning it will stay at the top of the users screen even when they scroll the site. This is because the site is a one-page design and it is essential for the user to always be able to navigate the site wherever their current position. When a link is hovered over it becomes underlined to help the user confirm they are about to select the relevant link. The underline remains once selected and the relevant navigation link is highlighted when the site is scrolled.
-
-The 'hamburger' icon was not used on small screens (where the navigation bar will collapse and be represented as three horizontal lines. When touched/clicked, this would reveal the navigation in a dropdown menu). This is often done due to the limited real estate space making the text hard to read when the screen is this size. However, this design was not used to make the site more easy to navigate for all users. Furthermore, the navigation only contains three links, so they have the space to remain next to each other still on small screens without causing accessibility and design issues. However, the logo will be centered and the navigation drop below at a particular screen width.
+The score area displays the number of Guesses Made, Wrong Guesses and Letters Found.  This is placed at the top, below the heading as it displays important information to the user.  The innerHTML of this area is also used to track game logic, such as the correct gallows image to show, when all letters have been guessed and when the game is over.
 
 <img src="assets/images/readme/header-large.jpg"  alt="Header at full screen">
 
 
 [Back to top ⇧](#Hull-College)
 
-## Hero Image
+## Word Area
 
-An eye-catching full screen image is placed under the navigation. This helps grab the users attention and convey positive, professional feelings.
+This area holds the word for the user to guess.  Before any letters are correctly guessed they are displayed as underscores.  These are then replaced with the guessed letters.
+
 
 <img src="assets/images/index/class.jpg"  alt="The hero image">
 
 [Back to top ⇧](#Hull-College)
 
-## About Information Box
+## Guessed Area
 
-A small box containing introductory information is placed below the hero image. This is eye-catching and quickly confirms to the user that they are on the correct site. It offers general information on the college, so users quickly get a feel for its achievements.
+The guessed area shows the letters previously guessed.  This helps the user not attempt to choose a letter that has already been picked.  It's innerHTML is also used to check this within the code.
+
 
 <img src="assets/images/readme/about-box.jpg"  alt="The About information box">
 
 [Back to top ⇧](#Hull-College)
 
-## Award Winning and Student Satisfaction
+## Guess Area
 
-A brief description of the four awards the college has won is displayed under cartoon images of awards. Beneath these are statistics of student success and recommendations. These help to install confidence in the quality of the college and help conversion rates of those viewing the site to enrol. Larger screens display the awards and statistics four in a row, reducing to two and then stacked on top of each other as screens get smaller. This is to give the user the best experience in terms of accessibility and usability. These sections mirror each other to help give the site a sense of balance.
+This area prompts the user to enter a letter via their keyboard.  If a letter is entered it is displayed.  This can then be deleted by either clicking on the #clear-btn or pressing the backspace key on the users keyboard.  Clicking the #submit-btn or pressing the enter key checks to make sure a letter has been entered.  If so the letter is checked to make sure it has not already been selected and then passed to the #guessed-area.  If a letter has not been entered an error message is displayed in the #message-area.  
+
+## Message Area
+Messages to the user are displayed here.  These either state that no letter has been entered or that a letter has already been chosen.
 
 <img src="assets/images/readme/award-large.jpg"  alt="Award Winning area">
 
+## Gallows Area
+The gallows area displays the image of the gallows and hangman.  It starts off blank and is dynamically updated using the innerHTML of the #wrong-guesses span.
+
+## Keyboard Area
+Buttons for the user to click are displayed in this area, which are generated via JavaScript.  This offers the user a different input option, where they can click the buttons rather then using their keyboard.  Once a letter is selected, either by clicking a button or via the users keyboard, the corresponding button is disabled.   
+
+
 ***
-
-<img src="assets/images/readme/satisfaction-large.jpg"  alt="Student Satisfaction area">
-
-[Back to top ⇧](#Hull-College)
-
-## Courses Section
-
-This section contains images for the courses available at the college, so users can quickly see if they offer a course they are interested in. Icons from Font Awesome are used for the courses to add visual interest and to make each course quickly identifiable and more memorable. On large screens the courses are displayed three in a row, changing to two and then one as the screen gets smaller.
-
-<img src="assets/images/readme/courses-large.jpg"  alt="Courses section">
-
-[Back to top ⇧](#Hull-College)
-
-## Contact Section
-
-This section allows the user to easily contact the college by using a form to send a message. The fields are clearly marked, all required and the email field must contain a valid email. The message is limited to 400 characters to keep them succinct and reduce the amount of characters needed to be stored in the database. The Submit button is a bright distinctive colour, acting as a call to action for the user.
-
-A map showing the college's location is also included in this section, allowing users to quickly identify where the college is based.
-
-<img src="assets/images/readme/contact-large.jpg"  alt="Contact area">
-
-*Please note the empty box on the left displays a map on the deployed site.*
-
-[Back to top ⇧](#Hull-College)
-
-## Footer
-
-The footer feature at the bottom of the page contains links to Hull Colleges social media links. This will help users find more information and stay up to date with the college. The links open in a new tab, so users are not taken away from Hull College's website. They are the same colour as those in the navigation for consistency and to help them stand out.
-
-<img src="assets/images/readme/footer.jpg"  alt="Footer section">
-
-[Back to top ⇧](#Hull-College)
 
 # Features to Implement in the future
 
-Add a dropdown to each course in the Courses section containing information on the course.
+Add numerous themes for the words the user can select.
 
-Add script to dynamically display how many characters are left for the form textarea.
+Add the default keyboard for mobile sizes.
 
-Remove inline JavaScript in index.html into a separate script folder.  This was not done as it was outside the scope of the project.
- 
-The active navigation highlighting does not always work correctly on scroll.  This feature was not fixed as the use of JavaScript is outside the scope of the project.
 
 # Technologies Used
 
@@ -180,12 +155,7 @@ The active navigation highlighting does not always work correctly on scroll.  Th
 
 - HTML
 - CSS
-
-[Back to top ⇧](#Hull-College)
-
-## Additional Languages Used
-
-- JavaScript was used to change the highlighted navigation link on scroll.
+- JavaScript
 
 [Back to top ⇧](#Hull-College)
 
