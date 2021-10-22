@@ -79,31 +79,19 @@ The target market are individuals who want to play a quick game as a short distr
 
 ## Colour Scheme
 
-Blue was chosen as the main colour for the site. Research had shown that this is a colour associated with reliability, productivity, trust and order, which are the principles the college wish to promote.
+Black and white were mainly used, to convey a child like, hand-drawn aesthetic.  The message area has a red text colour to draw attention and add a warning-like effect.  The main colours used are shown below:
 
-[Coolors](https://coolors.co/) was then used to find a mix of blues for the main colour palette, with the following decided upon:
+- Message Area: #f52424 ![#f52424](https://via.placeholder.com/15/f52424/000000?text=+)
+- Disabled button text: #E2EC0D ![#E2EC0D](https://via.placeholder.com/15/E2EC0D/000000?text=+)
+- Body and Buttons: #110E0D ![#110E0D](https://via.placeholder.com/15/110E0D;/000000?text=+)
 
-- Header: #03045e ![#f03c15](https://via.placeholder.com/15/03045e/000000?text=+)
-- About: #caf0f8 ![#caf0f8](https://via.placeholder.com/15/caf0f8/000000?text=+)
-- Courses: #90e0ef ![#90e0ef](https://via.placeholder.com/15/90e0ef/000000?text=+)
-- Contact: #00b4d8 ![##00b4d8](https://via.placeholder.com/15/00b4d8/000000?text=+)
-- Footer: #0077b6 ![#0077b6](https://via.placeholder.com/15/0077b6/000000?text=+)
-
-<img  src="assets/images/readme/blue-colours.jpg"  alt="Blue colour scheme from Coolors.co">
-
-- Main text: #12130f ![#12130f](https://via.placeholder.com/15/12130f/000000?text=+)
-- Navigation and footer text/icons: #fffafa ![#fffafa](https://via.placeholder.com/15/fffafa/000000?text=+)
-- Accent color: #800080 ![#800080](https://via.placeholder.com/15/800080/000000?text=+)
-- Submit button: #faf482 ![#faf482](https://via.placeholder.com/15/faf482/000000?text=+)
 
 [Back to top ⇧](#Hull-College)
 
 ## Typography
 
-[Typespiration](https://typespiration.com/) was used to find complimenting [Google Font](https://fonts.google.com) pairings, with the following decided upon:
+[Google Fonts](https://fonts.google.com/specimen/Indie+Flower) was used to find a hand-drawn style font.  A fallback option of cursive.
 
-- Headings: Roboto Condensed, with a fallback of sans-serif.
-- Body: Poppins, with a fallback of sans-serif.
 
 [Back to top ⇧](#Hull-College)
 
