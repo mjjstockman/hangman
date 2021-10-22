@@ -65,9 +65,9 @@ The target market are individuals who are wanting to find out more about the col
 
 ## Wireframes
 
-| Small screens | Medium screens | Largescreens |
-| --------------| -------------- | ------------ |
-| <img  src="assets/images/readme/wireframe-small.jpg"  alt="Wireframe of small screen"> | <img  src="assets/images/readme/wireframe-medium.jpg"  alt="Wireframe of medium screen"> | <img  src="additional-files/wireframe-large.png"  alt="Wireframe of large screen"> |
+| Under 500px width | Over 500px width |
+| --------------| -------------- | 
+| <img  src="additional-files/wireframe-small.png"  alt="Wireframe for under 500px width"> | <img  src="additional-files/wireframe.png"  alt="Wireframe for over 500px width"> |
 
 *Images created and taken from [Balsamiq](https://balsamiq.com/wireframes)*
 

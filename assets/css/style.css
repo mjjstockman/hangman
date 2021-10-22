@@ -28,6 +28,7 @@ body, button {
 
 body {
 	background-image: url(/assets/images/unsplash-paper.jpg);
+	/* background-repeat: no-repeat; */
 }
 
 h1, #score-area, #word-area, #guessed-area, #guess-area, #message-area, #keyboard-area {
