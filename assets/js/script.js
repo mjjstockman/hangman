@@ -1,20 +1,55 @@
+/**
+ * Select the #keyboard-area
+ */
 const keyboardArea = document.getElementById('keyboard-area');
+/**
+ * An array to hold the words to guess
+ */
 const words = [
   "PANCAKE",
   "CURRY"
 ];
+/**
+ * Select the #word-area
+ */
 const wordArea = document.getElementById('word-area');
+/**
+ * Select the #submit-btn
+ */
 const submitBtn = document.getElementById("submit-btn");
+/**
+ * Select the #keyed-guess
+ */
 const keyedGuess = document.getElementById("keyed-guess");
+/**
+ * Select the #message-area
+ */
 const messageArea = document.getElementById("message-area");
+/**
+ * Select the #guessed-letters
+ */
 const guessedLettersArea = document.getElementById("guessed-letters");
+/**
+ * Select the #gallows-img"
+ */
 const gallowsImg = document.getElementById("gallows-img");
+/**
+ * Select the #wrong-guesses
+ */
 const wrongGuessesArea = document.getElementById("wrong-guesses");
+/**
+ * Select the #guesses
+ */
 const oldGuesses = document.getElementById("guesses");
+/**
+ * Select the #wrong-guesses
+ */
 const oldWrongGuesses = document.getElementById("wrong-guesses");
+/**
+ * Select the #letters-found
+ */
 const oldLettersFound = document.getElementById("letters-found");
 
-// let answerArray = [];
 
 /**
  * display the keyboard in the keyboard-area, giving each button an id of their value
@@ -30,6 +65,7 @@ const oldLettersFound = document.getElementById("letters-found");
                     onclick="checkDuplicate(id)">` + c +
                 `</button>`;
     }
+    // add the html to the #keyboard-area
     keyboardArea.innerHTML = html; 
 }
 
@@ -41,7 +77,6 @@ const oldLettersFound = document.getElementById("letters-found");
  function chooseWord() {
     word = words[Math.floor(Math.random() * words.length)].toUpperCase();  
 }
-
 
 /**
  * display the random word in the word-area as underscores for each letter
@@ -59,7 +94,7 @@ const oldLettersFound = document.getElementById("letters-found");
 /**
  * if keydown is an ASCII letter convert it to a string and add it to the keyed-guess area.
  * if it's the enter button call checkEmptyKeyGuess
- * @param {*} event 
+ * @param {*} event listens for a keydown press
  */
  document.onkeydown = function(event) {
     let keyCode = event.keyCode;
@@ -72,6 +107,7 @@ const oldLettersFound = document.getElementById("letters-found");
     if (keyCode === 13) {
       document.activeElement.blur();
       checkEmptyKeyGuess();
+      // if backspace pressed
     } if (keyCode === 8) {
       clearKeyGuess();
     }
@@ -79,13 +115,12 @@ const oldLettersFound = document.getElementById("letters-found");
 
 
   /**
-   * if keyed guess area is empty alert user, if not check the guess
+   * if keyed guess area is empty add message to screen, if not check the guess for duplicates
    */
  function checkEmptyKeyGuess() {
     let keyedGuess = document.getElementById("keyed-guess").innerHTML;
     if (keyedGuess === "") {
       messageArea.innerHTML = "No letter!!";
-      // document.getElementById("message-area").innerHTML = "No letter!!";
     } else {
       checkDuplicate(keyedGuess);
     }
@@ -93,13 +128,14 @@ const oldLettersFound = document.getElementById("letters-found");
 
 /**
  * increment guesses made and add the guessed letter to the word if it is in it 
- * @param {*} id 
+ * @param {*} id is also the value of the keyed button
  */
 function checkGuess(id) {
     disableLetter(id);
     updateGuessedLetters(id);
     incrementGuesses();
     let newMatches = 0;
+    // check if guess was succsessful 
     for (let i = 0; i < word.length; i++) {
         if (id == word[i]) {
             answerArray[i] = id;
@@ -108,12 +144,17 @@ function checkGuess(id) {
             newMatches++;
         }     
     }
+    // if guess was not succsessful
     if (newMatches === 0) {
         incrementWrongGuesses();
         updateGallows();
     }
 }
 
+/**
+ * disable selected letter on html keyboard
+ * @param {*} id is also the value of the keyed button
+ */
 function disableLetter(id) {
   document.getElementById(id).disabled = true;
 }
@@ -130,16 +171,19 @@ let guessedLetters = [];
 
 /**
  * display guessed letters 
- * @param {*} letter 
+ * @param {*} letter is the selected letter
  */
 function updateGuessedLetters(letter) {
     guessedLetters.push(letter);
     for (letter in guessedLetters) {
       guessedLettersArea.innerHTML = guessedLetters.join(" ");
-      // document.getElementById("guessed-letters").innerHTML = guessedLetters.join(" ");
     }
   }
 
+  /**
+   * check selected letter has not already been chosen
+   * @param {*} id is also the value of the keyed button
+   */
 function checkDuplicate(id) {
   clearMessage();
   clearKeyGuess();
@@ -150,12 +194,15 @@ function checkDuplicate(id) {
   }
 }
 
+/**
+ * clear message area text
+ */
 function clearMessage() {
   messageArea.innerHTML = "";
 }
 
 /**
- * update gallows img using wrongAnswers var
+ * update gallows img using wrongGuessesNum var
  */
 function updateGallows() {
     let wrongGuessesNum = wrongGuessesArea.innerText;
@@ -168,8 +215,6 @@ function updateGallows() {
  */
   function incrementGuesses() {
     ++oldGuesses.innerHTML;
-      // let oldGuesses = parseInt(document.getElementById("guesses").innerHTML);
-      // document.getElementById("guesses").innerHTML = ++oldGuesses;
   }
 
   /**
@@ -177,20 +222,16 @@ function updateGallows() {
    */
   function incrementWrongGuesses() {
     ++oldWrongGuesses.innerHTML;
-    // let oldWrongGuesses = parseInt(document.getElementById("wrong-guesses").innerHTML);
-    // document.getElementById("wrong-guesses").innerHTML = ++oldWrongGuesses;
     if (oldWrongGuesses == 10) {
       gameOver();
     }
 }
 
  /**
-   * add 1 to the number of letters-found with each guessed letter
+   * add 1 to the number of letters-found with each guessed letter. gameWon called when letters-found is the length of the word
    */
   function incrementLettersFound() {
     ++oldLettersFound.innerHTML;
-    // let oldLettersFound = parseInt(document.getElementById("letters-found").innerHTML);
-    // document.getElementById("letters-found").innerHTML = ++oldLettersFound;
     if (oldLettersFound  == word.length) {
       gameWon();
     }
@@ -213,6 +254,9 @@ function gameWon() {
   alert("GAME WON!!!!!!!!!!!");
 }
 
+/**
+ * set up the game ready to be played
+ */
 function setUp(){
   chooseWord();
   guessedLettersArea.innerHTML = "";
@@ -229,4 +273,7 @@ function setUp(){
   clearKeyGuess();
 }
 
+/**
+ * set up the game when document is loaded
+ */
 document.onload = setUp()
