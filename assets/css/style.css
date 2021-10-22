@@ -17,8 +17,6 @@ html {
 img {
 	width: 100%;
   	height: auto;
-	/* margin: 0 auto;
-	display: block; */
 }
 
 body, button {
@@ -28,11 +26,12 @@ body, button {
 
 body {
 	background-image: url(/assets/images/unsplash-paper.jpg);
-}
-
-h1, #score-area, #word-area, #guessed-area, #guess-area, #message-area, #keyboard-area {
 	text-align: center;
 }
+
+/* h1, #score-area, #word-area, #guessed-area, #guess-area, #message-area, #keyboard-area {
+	text-align: center;
+} */
 
 #word-area {
 	font-size: 4rem;
