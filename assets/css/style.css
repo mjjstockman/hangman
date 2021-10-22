@@ -14,6 +14,7 @@ html {
     font-size: 62.5%;
 }
 
+/* make images responsive */
 img {
 	width: 100%;
   	height: auto;
@@ -47,7 +48,7 @@ button {
 #gallows-img, button {
 	/* adds hand-drawn effect to border */
 	border-radius: 1em 3em 2em 5em/5em 2em 3em 2em;
-	border: 0.1em solid black;
+	border: 0.1em solid #110E0D;
 }
 
 button:hover {
@@ -55,7 +56,7 @@ button:hover {
   } 
 
   button:disabled {
-	color: yellow;
+	color: #E2EC0D;
 	box-shadow: none;
 	border: none;
 }
@@ -63,7 +64,6 @@ button:hover {
 #keyboard-area > button {
 	font-size: 1.8rem;
 }
-
 
 #guess-area {
 	display: flex;
@@ -85,7 +85,7 @@ button:hover {
 }
 
 #message-area {
-	color: red;
+	color: #F52424;
 	height: 20px;
 }
 
@@ -119,6 +119,7 @@ button:hover {
 			font-size: 1.5rem;
 		}
 
+		/* use flexbox to align children */
 		#gallows-and-keyboard {
 			display: flex;
 			align-items: center;
@@ -130,8 +131,7 @@ button:hover {
 		}
   }
 
-
-
+/* increase font-sizes at further break points */
   @media only screen and (min-width: 700px) {
 	h1 {
 		font-size: 6rem;
