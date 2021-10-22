@@ -276,4 +276,4 @@ function setUp(){
 /**
  * set up the game when document is loaded
  */
-document.onload = setUp()
+document.onload = setUp();

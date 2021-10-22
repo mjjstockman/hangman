@@ -15,7 +15,6 @@
    - [User Demographics](#User-Demographics)
    - [User Stories](#User-Stories)
    - [Wireframes](#Wireframes)
-   - [Changes to the design throughout development](#Changes-to-the-design-throughout-development)
    - [Colour Scheme](#Colour-Scheme)
    - [Typography](#typography)
 3. [Features](#Features)
@@ -41,7 +40,7 @@
 
 # Introduction
 
-This is a fictional website (for educational purposes) for potential students to find basic information about **Hull College** in East Yorkshire, England. It gives basic information on the college's success, the courses offered and a way to contact them, so users can gauge the suitability of the college.
+The following is a game of Hangman, with the logic created using JavaScript.
 
 [Back to top ⇧](#Hull-College)
 
@@ -49,17 +48,20 @@ This is a fictional website (for educational purposes) for potential students to
 
 ## User Demographics
 
-The target market are individuals who are wanting to find out more about the college to see if they want to enrol. It is not for current students.
+The target market are individuals who want to play a quick game as a short distraction.  It is focused towards younger players, so a lot of guesses are allowed before the game is over.
+
 
 ## User Stories
 
-1. As a potential student, I want to quickly see what courses are offered, so I can see if they are of interest.
+1. As a gamer, I want to quickly tell what the game is, so I can see if I want to play it.
 
-2. As a potential student, I want to see some general "about" text, so I can confirm that I am on the correct site for my needs.
+2. As a gamer, I want to be able to either win or loose, so I am motivated to try my best.
 
-3. As a potential student, I want to see facts and figures on student satisfaction, so I can gauge whether I want to enrol.
+3. As a gamer, I want to be able to enter a guess using either my keyboard or by clicking on a button, so I can play in a way that best suits me.
 
-4. As a potential student, I want to be able to contact the college, so that I can ask any questions I have.
+4. As a gamer, I want visual representation on how well I am doing, so that I am kept engaged and can easily see my progress.
+
+5. As a gamer, I want to be able to restart a game easily, so that I don't have to refresh the browser to start a new game whilst I am already playing.
 
 [Back to top ⇧](#Hull-College)
 
@@ -73,17 +75,7 @@ The target market are individuals who are wanting to find out more about the col
 
 [Back to top ⇧](#Hull-College)
 
-## Changes to the design throughout development
-
-The original design was slightly different to the above wireframes. The following particulars were changed during implementation to better the user experience and aesthetics:
-
-The header was changed so that the logo was centered and the navigation drops underneath when the screen is reduced to a particular size. This meant that the navigation links did not get too close together.
-
-Form labels were moved above their inputs, placeholders removed and all inputs and the submit button were stacked and the same width.
-
-A map showing the colleges location was added to the contact section.
-
-[Back to top ⇧](#Hull-College)
+  
 
 ## Colour Scheme
 
