@@ -267,7 +267,7 @@
      answerArray = [];
      createAnswerArray();
      createKeyboard();
-     updateGallows();
+    //  updateGallows();
      clearMessage();
      clearKeyGuess();
  }
