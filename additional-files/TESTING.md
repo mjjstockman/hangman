@@ -88,12 +88,16 @@ The site was tested on the following browsers:
 - Opera
 - Firefox
 
-# Bugs Found
+# Bugs/Issues Found
 
-## Use of AVIF's
-The AVIF format was used for all images, in an attempt to reduce file size.  When testing on the above browsers, it was found that the AVIF format is [not yet widely supported](https://caniuse.com/?search=AVIF).
+## Functions called twice
+When the focus was on the submit button and the user pressed the enter key on their keyboard the submit button was clicked twice (once for the enter keydown and again for the button click).  This was dealt with by removing the documents active focus when the user presses their enter key on their keyboard.
 
-A decision was therefore made to convert the images back to a suitable file format.
+Further research has suggested that this was not the best approach from a UX point of view and an alternative solution should be found in the future.
+
+
+## keyCode deprecated
+keyCode was used to capture the character the user presses on their keyboard.  Research showed that this method has been deprecated and it is suggested to use key instead.  However, keyCode was checked using [caniuse](https://caniuse.com/) and found to still be widely supported so it was not changed.
 
 
 
