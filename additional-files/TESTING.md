@@ -1,3 +1,6 @@
+# Hangman Testing
+
+
 ***
 
 # Table of Contents
@@ -16,7 +19,7 @@
 
 # Testing User Stories
 
-[Back to top ⇧](#Hull-College-Testing)
+[Back to top ⇧](#Hangman-Testing)
 
 1. **As a gamer, I want to quickly tell what the game is, so I can see if I want to play it.**
 
@@ -49,7 +52,7 @@
     - A restart button is clearly displayed at the bottom of the page.
 
 
-[Back to top ⇧](#Hull-College-Testing)
+[Back to top ⇧](#Hangman-Testing)
 
 # Manual Testing
 
@@ -72,7 +75,7 @@
 
 <img  src="assets/images/testing/header-stacked.jpg"  alt="The header with logo on top and navigation below">
 
-[Back to top ⇧](#Hull-College-Testing)
+[Back to top ⇧](#Hangman-Testing)
 
 ## Browser Validation
 
@@ -104,7 +107,7 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator) was used to validat
 
 
 
-[Back to top ⇧](#Hull-College-Testing)
+[Back to top ⇧](#Hangman-Testing)
 
 
 
@@ -112,7 +115,7 @@ The [W3C CSS Validator](https://jigsaw.w3.org/css-validator) was used to validat
 
 Numerous peers and friends helped to review the site and its development.
 
-[Back to top ⇧](#Hull-College-Testing)
+[Back to top ⇧](#Hangman-Testing)
 
 # Issues and Bugs
 
@@ -126,4 +129,4 @@ Further research has suggested that this was not the best approach from a UX poi
 keyCode was used to capture the character the user presses on their keyboard.  Research showed that this method has been deprecated and it is suggested to use key instead.  However, keyCode was checked using [caniuse](https://caniuse.com/) and found to still be widely supported so it was not changed.
 
 
-[Back to top ⇧](#Hull-College-Testing)
+[Back to top ⇧](#Hangman-Testing)

@@ -63,7 +63,7 @@ The target market are individuals who want to play a quick game as a short distr
 
 5. As a gamer, I want to be able to restart a game easily, so that I don't have to refresh the browser to start a new game whilst I am already playing.
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## Wireframes
 
@@ -73,7 +73,7 @@ The target market are individuals who want to play a quick game as a short distr
 
 *Images created and taken from [Balsamiq](https://balsamiq.com/wireframes)*
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
   
 
@@ -86,14 +86,14 @@ Black and white were mainly used, to convey a child like, hand-drawn aesthetic. 
 - Body and Buttons: #110E0D ![#110E0D](https://via.placeholder.com/15/110E0D;/000000?text=+)
 
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## Typography
 
 [Google Fonts](https://fonts.google.com/specimen/Indie+Flower) was used to find a hand-drawn style font.  A fallback option of cursive is used.
 
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 # Features
 
@@ -104,7 +104,7 @@ The score area displays the number of Guesses Made, Wrong Guesses and Letters Fo
 <img src="additional-files/score-area.png"  alt="Score area showing guesses made, wrong guesses and letters found">
 
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## Word Area
 
@@ -113,7 +113,7 @@ This area holds the word for the user to guess.  Before any letters are correctl
 
 <img src="additional-files/word-area.png"  alt="Word area showing underscores and letters">
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## Guessed Area
 
@@ -122,7 +122,7 @@ The guessed area shows the letters previously guessed.  This helps the user not 
 
 <img src="additional-files/guessed-area.png"  alt="Guessed area showing guessed letters">
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## Guess Area
 
@@ -151,10 +151,13 @@ Buttons for the user to click are displayed in this area, which are generated vi
 
 Change the win/loose game from an alert to a professional looking page with a congratulations/commiserations message and an option to play again.
 
+Use a list of words and use JSON to pass them to the chooseWord function.
+
 Add numerous themes for the words the user can select.
 
 Add the default keyboard for mobile sizes.
 
+[Back to top ⇧](#Hangman)
 
 # Technologies Used
 
@@ -164,13 +167,13 @@ Add the default keyboard for mobile sizes.
 - CSS
 - JavaScript
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 # Testing
 
 Details on site testing can be found [here](TESTING.md).
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 # Deployment
 
@@ -187,7 +190,7 @@ The code was deployed to GitHub Pages in the following way:
 7. The URL address for the deployed site will be shown.
 
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## How to Fork the Repository
 
@@ -196,7 +199,7 @@ The code was deployed to GitHub Pages in the following way:
 3. Click "Fork" at the top right of the page.
 4. The repository will be copied into your GitHub account.
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## How to create a Clone using SSH
 
@@ -214,7 +217,7 @@ $ git clone https://github.com/mjjstockman/hangman
 
 8. Press **Enter**.
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 # Credits
 
@@ -246,7 +249,7 @@ Many thanks to the following which were used throughout the creation of this sit
 - [Typespiration](https://typespiration.com)
 
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## Images
 
@@ -254,7 +257,7 @@ The Hero image was taken from [Adobe Stock Image](https://stock.adobe.com/).
 
 All other images were taken from [Pexels](https://www.pexels.com/).
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 ## Acknowledgements
 
@@ -262,4 +265,4 @@ All other images were taken from [Pexels](https://www.pexels.com/).
 - Thank you to the Code Institute Slack community for their advice.
 - A wonderful [README.md](https://github.com/rebeccatraceyt/KryanLive) by [Rebecca Tracey-Timoney](https://github.com/rebeccatraceyt) was used for inspiration and guidance.
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
