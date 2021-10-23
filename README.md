@@ -1,6 +1,6 @@
 # Hangman
 
-<img  src="assets/images/readme/amiresponsive.jpg"  alt="Mockup of the Hull College website on a phone, tablet, laptop and monitor screen">
+<img  src="additional-files/amiresponsive.jpg"  alt="Mockup of the Hangman website on a phone, tablet, laptop and monitor screen">
 
 *Image created and taken from [Am I Responsive?](ami.responsivedesign.is).*
 
