@@ -240,6 +240,8 @@ Many thanks to the following which were used throughout the creation of this sit
 
 The Gallows image was taken from [Stick PNG](www.stickpng.com).
 
+The background image was taken from [Unsplash](https://unsplash.com/)
+
 
 [Back to top ⇧](#Hangman)
 
