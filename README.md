@@ -157,6 +157,8 @@ Add the default keyboard for mobile sizes.
 
 Add a favicon.
 
+Make sure code lines are no longer than 80 characters.
+
 [Back to top ⇧](#Hangman)
 
 # Technologies Used
