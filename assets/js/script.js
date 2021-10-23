@@ -207,7 +207,7 @@
   */
  function updateGallows() {
      let wrongGuessesNum = wrongGuessesArea.innerText;
-     gallowsImg.src = `/assets/images/gallows${wrongGuessesNum}.jpg`;
+     gallowsImg.src = `assets/images/gallows${wrongGuessesNum}.jpg`;
      gallowsImg.alt = `Hand-drawn gallows with the first ${wrongGuessesNum} out of 10 parts`;
  }
  
