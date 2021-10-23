@@ -4,7 +4,8 @@
 
 *Image created and taken from [Am I Responsive?](ami.responsivedesign.is).*
 
-[View the live project here](https://mjjstockman.github.io/hull-college).
+[View the live project here](https://mjjstockman.github.io/hangman/).
+
 
 ---
 
