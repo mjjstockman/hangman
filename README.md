@@ -149,6 +149,7 @@ Buttons for the user to click are displayed in this area, which are generated vi
 
 # Features to Implement in the future
 
+Change the win/loose game from an alert to a professional looking page with a congratulations/commiserations message and an option to play again.
 
 Add numerous themes for the words the user can select.
 
