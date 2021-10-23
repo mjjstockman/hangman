@@ -18,14 +18,12 @@
    - [Colour Scheme](#Colour-Scheme)
    - [Typography](#typography)
 3. [Features](#Features)
-   - [Navigation and Header](#Navigation-and-Header)
-   - [Hero Image](#Hero-Image)
-   - [About Information Box](#About-Information-Box)
-   - [Award Winning and Student Satisfaction](#Award-Winning-and-Student-Satisfaction)
-   - [About Information Box](#About-Information-Box)
-   - [Courses Section](#Courses-Section)
-   - [Contact Section](#Contact-Section)
-   - [Footer](#Footer)
+   - [Score Area](#Score-Area)
+   - [Word Area](#Word-Area)
+   - [Guessed Area](#Guessed-Area)
+   - [Message Area](#Message-Area)
+   - [Gallows Area](#Gallows-Area)
+   - [Keyboard Area](#Keyboard-Area)
 4. [Future Features](#Features-to-Implement-in-the-future)
 5. [Testing](#Testing)
 6. [Deployment](#Deployment)
@@ -149,13 +147,15 @@ Buttons for the user to click are displayed in this area, which are generated vi
 
 # Features to Implement in the future
 
-Change the win/loose game from an alert to a professional looking page with a congratulations/commiserations message and an option to play again.
+Change the win/loose game from an alert to a professional looking page with a congratulations/commiserations message and an option to play again.  
 
 Use a list of words and use JSON to pass them to the chooseWord function.
 
 Add numerous themes for the words the user can select.
 
 Add the default keyboard for mobile sizes.
+
+Add a favicon.
 
 [Back to top ⇧](#Hangman)
 
@@ -224,38 +224,22 @@ $ git clone https://github.com/mjjstockman/hangman
 Many thanks to the following which were used throughout the creation of this site:
 
 - [w3c Markup Validator](https://validator.w3.org)
-- [Adobe Stock Image](https://stock.adobe.com)
 - [Am I Responsive?](http://ami.responsivedesign.is)
 - [Balsamiq](https://balsamiq.com/)
-- [Coolors](https://coolors.co/)
 - [Design Course tutorial](https://www.youtube.com/watch?v=z9H7p1_iI14)
-- [Embed My Map](https://www.embedmymap.com/)
-- [Favicon.io](https://favicon.io)
-- [Font Awesome](https://fontawesome.com)
 - [Free Formatter](https://www.freeformatter.com/)
 - [Google Fonts](https://fonts.google.com)
 - [Git](https://git-scm.com)
 - [GitHub](https://github.com)
-- [Json Formatter](https://jsonformatter.org/markdown-formatter)
-- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-- [Looka](https://looka.com/)
-- [Malsu Codepen](https://codepen.io/malsu/pen/VwKzoPG)
-- [Pexels](https://www.pexels.com)
-- [Placeholder.com/](https://placeholder.com)
 - [Responsinator](http://www.responsinator.com)
-- [Squoosh](https://squoosh.app)
-- [Super Cool Design](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text)
-- [TinyPNG](https://tinypng.com)
-- [Typespiration](https://typespiration.com)
 
 
 [Back to top ⇧](#Hangman)
 
 ## Images
 
-The Hero image was taken from [Adobe Stock Image](https://stock.adobe.com/).
+The Gallows image was taken from [Stick PNG](www.stickpng.com).
 
-All other images were taken from [Pexels](https://www.pexels.com/).
 
 [Back to top ⇧](#Hangman)
 
