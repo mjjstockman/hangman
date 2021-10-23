@@ -101,7 +101,7 @@ Black and white were mainly used, to convey a child like, hand-drawn aesthetic. 
 
 The score area displays the number of Guesses Made, Wrong Guesses and Letters Found.  This is placed at the top, below the heading as it displays important information to the user.  The innerHTML of this area is also used to track game logic, such as the correct gallows image to show, when all letters have been guessed and when the game is over.
 
-<img src="assets/images/readme/header-large.jpg"  alt="Header at full screen">
+<img src="additional-files/score-area.png"  alt="Score area showing guesses made, wrong guesses and letters found">
 
 
 [Back to top ⇧](#Hull-College)
@@ -111,7 +111,7 @@ The score area displays the number of Guesses Made, Wrong Guesses and Letters Fo
 This area holds the word for the user to guess.  Before any letters are correctly guessed they are displayed as underscores.  These are then replaced with the guessed letters.
 
 
-<img src="assets/images/index/class.jpg"  alt="The hero image">
+<img src="additional-files/word-area.png"  alt="Word area showing underscores and letters">
 
 [Back to top ⇧](#Hull-College)
 
@@ -120,7 +120,7 @@ This area holds the word for the user to guess.  Before any letters are correctl
 The guessed area shows the letters previously guessed.  This helps the user not attempt to choose a letter that has already been picked.  It's innerHTML is also used to check this within the code.
 
 
-<img src="assets/images/readme/about-box.jpg"  alt="The About information box">
+<img src="additional-files/guessed-area.png"  alt="Guessed area showing guessed letters">
 
 [Back to top ⇧](#Hull-College)
 
@@ -128,17 +128,22 @@ The guessed area shows the letters previously guessed.  This helps the user not 
 
 This area prompts the user to enter a letter via their keyboard.  If a letter is entered it is displayed.  This can then be deleted by either clicking on the #clear-btn or pressing the backspace key on the users keyboard.  Clicking the #submit-btn or pressing the enter key checks to make sure a letter has been entered.  If so the letter is checked to make sure it has not already been selected and then passed to the #guessed-area.  If a letter has not been entered an error message is displayed in the #message-area.  
 
+<img src="additional-files/guess-area.png"  alt="Guess with enter and clear guess buttons">
+
 ## Message Area
 Messages to the user are displayed here.  These either state that no letter has been entered or that a letter has already been chosen.
 
-<img src="assets/images/readme/award-large.jpg"  alt="Award Winning area">
+<img src="additional-files/message.png"  alt="Message area showing A has already been chosen, in red">
 
 ## Gallows Area
 The gallows area displays the image of the gallows and hangman.  It starts off blank and is dynamically updated using the innerHTML of the #wrong-guesses span.
 
+<img src="additional-files/gallows.png"  alt="Hand-drawn style gallows">
+
 ## Keyboard Area
 Buttons for the user to click are displayed in this area, which are generated via JavaScript.  This offers the user a different input option, where they can click the buttons rather then using their keyboard.  Once a letter is selected, either by clicking a button or via the users keyboard, the corresponding button is disabled.   
 
+<img src="additional-files/keyboard.png"  alt="Buttons for A to Z in hand-drawn style">
 
 ***
 
@@ -172,22 +177,20 @@ Details on site testing can be found [here](TESTING.md).
 The code was deployed to GitHub Pages in the following way:
 
 1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
-2. Select the [GitHub Repository](https://github.com/mjjstockman/hull-college).
+2. Select the [GitHub Repository](https://github.com/mjjstockman/hull-hangman).
 3. Open Settings by clicking on the Settings link (with the cog icon).
 4. Scroll down to the GitHub Pages section and click on the link.
-   <img src="assets/images/readme/github-pages.jpg"  alt="GitHub Pages section">
 5. Click the dropdown box in the Source section (which currently states "none") and select master (this may be named "main" for some users).
-   <img src="assets/images/readme/github-source.jpg"  alt="Selecting master branch as source">
 6. Click Save.
 7. The URL address for the deployed site will be shown.
-   <img src="assets/images/readme/deployed-address.jpg"  alt="Example of URL once deployed">
+
 
 [Back to top ⇧](#Hull-College)
 
 ## How to Fork the Repository
 
 1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
-2. Select the [GitHub Repository](https://github.com/mjjstockman/hull-college).
+2. Select the [GitHub Repository](https://github.com/mjjstockman/hangman).
 3. Click "Fork" at the top right of the page.
 4. The repository will be copied into your GitHub account.
 
@@ -196,16 +199,15 @@ The code was deployed to GitHub Pages in the following way:
 ## How to create a Clone using SSH
 
 1. Log into [GitHub](https://github.com/login) or [create an account](https://github.com/join).
-2. Select the [GitHub Repository](https://github.com/mjjstockman/hull-college).
+2. Select the [GitHub Repository](https://github.com/mjjstockman/hangman).
 3. Click on the Code button.
 4. Copy the provided SSH link.
-   <img src="assets/images/readme/code-dropdown.jpg"  alt="Example of the provided link">
 5. Open Terminal.
-6. Navigate into the directory you want to clone the repositroy to.
+6. Navigate into the directory you want to clone the repository to.
 7. Type git clone and paste the copied URL.
 
 ```
-$ git clone https://github.com/mjjstockman/hull-college
+$ git clone https://github.com/mjjstockman/hangman
 ```
 
 8. Press **Enter**.
