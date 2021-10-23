@@ -222,7 +222,7 @@ function updateGallows() {
    */
   function incrementWrongGuesses() {
     ++oldWrongGuesses.innerHTML;
-    if (oldWrongGuesses == 10) {
+    if (oldWrongGuesses.innerHTML == 10) {
       gameOver();
     }
 }
@@ -232,8 +232,8 @@ function updateGallows() {
    */
   function incrementLettersFound() {
     ++oldLettersFound.innerHTML;
-    if (oldLettersFound  == word.length) {
-      gameWon();
+    if (oldLettersFound.innerHTML == word.length) {
+      alert("WOIN!!!!!");
     }
   }
 
@@ -242,16 +242,14 @@ function updateGallows() {
  * alert when the game is lost
  */
 function gameOver() {
-    // ????? HOW NOT CALL UNTIL GALLOWS, SCORE-AREA ETC UPDATED ??????
-    alert("GAME OVER@@@!!");
+    alert("GAME OVER!!");
 }
 
 /**
  * alert when the game is won
  */
 function gameWon() {
-  // ????? HOW NOT CALL UNTIL GALLOWS, SCORE-AREA ETC UPDATED ??????
-  alert("GAME WON!!!!!!!!!!!");
+  alert("GAME WON!!");
 }
 
 /**

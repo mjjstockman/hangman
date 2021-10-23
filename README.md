@@ -1,4 +1,4 @@
-# Hull College
+# Hangman
 
 <img  src="assets/images/readme/amiresponsive.jpg"  alt="Mockup of the Hull College website on a phone, tablet, laptop and monitor screen">
 
@@ -42,7 +42,7 @@
 
 The following is a game of Hangman, with the logic created using JavaScript.
 
-[Back to top ⇧](#Hull-College)
+[Back to top ⇧](#Hangman)
 
 # UX and Design
 
@@ -148,6 +148,7 @@ Buttons for the user to click are displayed in this area, which are generated vi
 ***
 
 # Features to Implement in the future
+
 
 Add numerous themes for the words the user can select.
 
