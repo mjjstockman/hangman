@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>HANGMAN</title>
-</head>
-<body>
-    <div id="header">
-        <h1>HANGMAN</h1>
-    </div>
-
-    <div id="score-area">
-        Guesses Made: <span id="guesses">0</span>
-        Wrong Guesses: <span id="wrong-guesses">0</span>
-        Letters Found: <span id="letters-found">0</span>
-    </div>
-
-    <div id="word-area">
-       word area
-    </div>
-
-    <div id="guessed-area">
-        Guessed Letters: <span id="guessed-letters"></span>
-    </div>
-
-    <div id="guess-area">
-        Enter Guess: &nbsp;
-        <span id="keyed-guess"></span>
-        <button id="submit-btn" onclick="checkEmptyKeyGuess()">Enter</button>
-        <button id="clear-btn" onclick="clearKeyGuess()">Clear Guess</button>
-    </div>
-
-    <div id="message-area">
-        
-    </div>
-
-    <div id="gallows-and-keyboard">
-        <div id="gallows-area">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>HANGMAN</title>
+   </head>
+   <body>
+      <div id="header">
+         <h1>HANGMAN</h1>
+      </div>
+      <div id="score-area">
+         Guesses Made: <span id="guesses">0</span>
+         Wrong Guesses: <span id="wrong-guesses">0</span>
+         Letters Found: <span id="letters-found">0</span>
+      </div>
+      <div id="word-area">
+         word area
+      </div>
+      <div id="guessed-area">
+         Guessed Letters: <span id="guessed-letters"></span>
+      </div>
+      <div id="guess-area">
+         Enter Guess: &nbsp;
+         <span id="keyed-guess"></span>
+         <button id="submit-btn" onclick="checkEmptyKeyGuess()">Enter</button>
+         <button id="clear-btn" onclick="clearKeyGuess()">Clear Guess</button>
+      </div>
+      <div id="message-area">
+      </div>
+      <div id="gallows-and-keyboard">
+         <div id="gallows-area">
             <img id="gallows-img" src="assets/images/gallows0.jpg" alt="Hand-drawn hangman gallows">
-        </div>
-
-        <div id="keyboard-area">
+         </div>
+         <div id="keyboard-area">
             keyboard area
-        </div>
-    </div>
-
-    <div id="restart-area">
-        <button id="restart-btn" onclick="setUp()">Restart</button>
-    </div>
-
-    <script src="assets/js/script.js"></script>
-</body>
+         </div>
+      </div>
+      <div id="restart-area">
+         <button id="restart-btn" onclick="setUp()">Restart</button>
+      </div>
+      <script src="assets/js/script.js"></script>
+   </body>
 </html>

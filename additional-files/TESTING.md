@@ -11,7 +11,6 @@
    - [Browser Validation](#Browser-Validation)
 3. [Automated Testing](#Automated-Testing)
    - [Code Validation](#Code-Validation)
-   - [Lighthouse Auditing](#Lighthouse-Auditing)
 4. [User Testing](#User-Testing)
 5. [Issues and Bugs](#Issues-and-Bugs)
 
