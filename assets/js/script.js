@@ -224,7 +224,7 @@
  function incrementWrongGuesses() {
      ++oldWrongGuesses.innerHTML;
      if (oldWrongGuesses.innerHTML == 10) {
-         gameOver();
+        setTimeout(gameOver, 100);
      }
  }
  
@@ -234,7 +234,7 @@
  function incrementLettersFound() {
      ++oldLettersFound.innerHTML;
      if (oldLettersFound.innerHTML == word.length) {
-         alert("WOIN!!!!!");
+        setTimeout(gameWon, 100);
      }
  }
  
@@ -243,14 +243,21 @@
   * alert when the game is lost
   */
  function gameOver() {
+    //  add timeout before called
+    // reset game
      alert("GAME OVER!!");
+     setUp();
  }
  
  /**
   * alert when the game is won
   */
  function gameWon() {
+    //  add timeout before called
+    // reset game
+
      alert("GAME WON!!");
+     setUp();
  }
  
  /**
