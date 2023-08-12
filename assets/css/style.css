@@ -94,7 +94,7 @@ button:disabled {
 }
 
 #message-area {
-	color: green;
+	color: rgb(7, 98, 245);
 	height: 20px;
 }
 
