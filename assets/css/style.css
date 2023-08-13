@@ -34,7 +34,7 @@ button {
 }
 
 body {
-	background-image: url(assets/images/unsplash-paper.jpg);
+	background-image: url("../images/unsplash-paper.jpg");
 	text-align: center;
 }
 
@@ -94,7 +94,7 @@ button:disabled {
 }
 
 #message-area {
-	color: rgb(7, 98, 245);
+	color: #F52424;
 	height: 20px;
 }
 
